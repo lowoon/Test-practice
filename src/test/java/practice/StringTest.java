@@ -15,4 +15,14 @@ class StringTest {
         assertThat(emptyString.isEmpty()).isTrue();
         assertThat(spaceString.isEmpty()).isFalse();
     }
+
+    @Test
+    @DisplayName("lastIndexOf() : return last index of the target word")
+    void lastIndexOf() {
+        String randomAlpha = "abamnbn";
+        char target = 'b';
+        int tatgetIndex = 5;
+
+        assertThat(randomAlpha.lastIndexOf(target)).isEqualTo(tatgetIndex);
+    }
 }
