@@ -50,6 +50,7 @@ class StringTest {
     }
 
     @Test
+    @DisplayName("문자열을_문자_단위로_출력() : return each char from String")
     void 문자열을_문자_단위로_출력() {
         String name = "lowoon";
         char[] words = name.toCharArray();
